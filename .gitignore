@@ -1,0 +1,7 @@
+debian-build/cutepiesmtpdaemon
+*.pyc
+*.swp
+*~
+*.deb
+dist/
+cutePieSmtpDaemon.spec
