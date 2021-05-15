@@ -20,11 +20,13 @@ The default SMTP port `25` requires running the server with root priveleges. To 
 ([Mac OSX DMG](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSMTP-0.173.dmg) (15.6MB)
 -->
 ###### Mac OSX
-[Mac OSX DMG](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSMTP-0.174.dmg) (19MB)
+[Mac OSX DMG](https://github.com/glowinthedark/qtpysmtpdaemon/releases/download/0.1/CutePieSmtpDaemon.app.zip) (19MB)
 
+<!--
 ###### Windows
 [Windows EXE](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSmtpDaemon.exe) (15.9MB)
 
+-->
 ##### Linux
 See the [Usage](#usage) section for running on generic Linux systems.
 
