@@ -19,14 +19,11 @@ The default SMTP port `25` requires running the server with root priveleges. To 
 ###### Mac, Windows downloads
 Downloadable files are available under [Releases](https://github.com/glowinthedark/qtpysmtpdaemon/releases).
 <!--
-###### Mac OSX
-([Mac OSX DMG](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSMTP-0.173.dmg) (15.6MB)
+
 
 ###### Mac OSX
 [Mac OSX DMG](https://github.com/glowinthedark/qtpysmtpdaemon/releases/download/0.1/CutePieSmtpDaemon.app.zip) (19MB)
 
-###### Windows
-[Windows EXE](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSmtpDaemon.exe) (15.9MB)
 -->
 ##### Linux
 See the [Usage](#usage) section for running on generic Linux systems.
@@ -51,7 +48,7 @@ See the [Usage](#usage) section for running on generic Linux systems.
 2. Install and make executable:
     
 ```bash
-    sudo wget https://github.com/elFua/cutepiesmtp/raw/master/cutepiesmtp.py -O /usr/local/bin/cutepiesmtp.py
+    sudo wget https://github.com/glowinthedark/qtpysmtpdaemon/blob/master/cutepiesmtp.py?raw=true -O /usr/local/bin/cutepiesmtp.py
     sudo chmod +x /usr/local/bin/cutepiesmtp.py
 ```
 
@@ -64,7 +61,7 @@ See the [Usage](#usage) section for running on generic Linux systems.
 An alternative way would be to clone the git project, `cd` into the project folder, and run the python script:
     
 ```bash
-    git clone git@github.com:elFua/cutepiesmtp.git
+    git clone https://github.com/glowinthedark/qtpysmtpdaemon.git
     cd cutepiesmtp
     python cutepiesmtpdaemon.py
 ```
@@ -97,23 +94,6 @@ A script for building a Debian/Ubuntu compatible DEB package is provided in the 
 ```
 
 The DEB file will be created in the `debian-build` folder. The script will attempt to install the created DEB file using `dpkg -i packagename.deb`, and will prompt for the root password before performing the installation.
-    
-
-
-
-## Download
-<!--
-###### Mac OSX
-([Mac OSX DMG](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSMTP-0.173.dmg) (15.6MB)
--->
-###### Mac OSX
-[Mac OSX DMG](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSMTP-0.174.dmg) (19MB)
-
-###### Windows
-[Windows EXE](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSmtpDaemon.exe) (15.9MB)
-
-##### Linux
-See the [Usage](#usage) section for running on generic Linux systems.
 
 ## Features
 
@@ -127,59 +107,4 @@ See the [Usage](#usage) section for running on generic Linux systems.
 - display inline images
 - open selected email with system default mail application
 - print selected email message
-
-## Usage
-
-1. Install the [Dependencies](#dependencies).
-
-2. Install and make executable:
-    
-```bash
-    sudo wget https://github.com/elFua/cutepiesmtp/raw/master/cutepiesmtp.py -O /usr/local/bin/cutepiesmtp.py
-    sudo chmod +x /usr/local/bin/cutepiesmtp.py
-```
-
-3. Run the app:
-
-```bash
-    cutepiesmtp.py
-```
-    
-An alternative way would be to clone the git project, `cd` into the project folder, and run the python script:
-    
-```bash
-    git clone git@github.com:elFua/cutepiesmtp.git
-    cd cutepiesmtp
-    python cutepiesmtpdaemon.py
-```
-
-## Dependencies
-
-PieSmtpDaemon runs under Python 3.x. A version for _Python 2_ is available in another [branch](https://github.com/elFua/cutepiesmtp/tree/master-pyqt4-py2).
-
-The app requires the following python modules:
-
-*pyqt5*
-  
-  - Ubuntu/Debian Linux: `apt-get install python-qt5`
-  - OSX: `brew install pyqt5`
-
-*lxml* (optional) - used to cleanup the markup in HTML messages
-  
-  - `pip install lxml --user`
-  
-*cchardet* (optional) - used to auto-detect character sets
-  
-  - `pip install cchardet --user`
- 
-## Ubuntu/Debian build
-
-A script for building a Debian/Ubuntu compatible DEB package is provided in the repo. To build and install a deb package run the following command from the cloned project folder:
-
-```bash
-    ./debian-build/build_deb.sh
-```
-
-The DEB file will be created in the `debian-build` folder. The script will attempt to install the created DEB file using `dpkg -i packagename.deb`, and will prompt for the root password before performing the installation.
-    
 
