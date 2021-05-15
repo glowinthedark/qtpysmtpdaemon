@@ -16,15 +16,9 @@ The default SMTP port `25` requires running the server with root priveleges. To 
 
 ## Download
 
-###### Mac, Windows downloads
+##### Mac, Windows downloads
 Downloadable files are available under [Releases](https://github.com/glowinthedark/qtpysmtpdaemon/releases).
-<!--
 
-
-###### Mac OSX
-[Mac OSX DMG](https://github.com/glowinthedark/qtpysmtpdaemon/releases/download/0.1/CutePieSmtpDaemon.app.zip) (19MB)
-
--->
 ##### Linux
 See the [Usage](#usage) section for running on generic Linux systems.
 
@@ -48,27 +42,27 @@ See the [Usage](#usage) section for running on generic Linux systems.
 2. Install and make executable:
     
 ```bash
-    sudo wget https://github.com/glowinthedark/qtpysmtpdaemon/blob/master/cutepiesmtp.py?raw=true -O /usr/local/bin/cutepiesmtp.py
-    sudo chmod +x /usr/local/bin/cutepiesmtp.py
+sudo wget https://github.com/glowinthedark/qtpysmtpdaemon/blob/master/cutepiesmtp.py?raw=true -O /usr/local/bin/cutepiesmtp.py
+sudo chmod +x /usr/local/bin/cutepiesmtp.py
 ```
 
 3. Run the app:
 
 ```bash
-    cutepiesmtp.py
+cutepiesmtp.py
 ```
     
 An alternative way would be to clone the git project, `cd` into the project folder, and run the python script:
     
 ```bash
-    git clone https://github.com/glowinthedark/qtpysmtpdaemon.git
-    cd cutepiesmtp
-    python cutepiesmtpdaemon.py
+git clone https://github.com/glowinthedark/qtpysmtpdaemon.git
+cd cutepiesmtp
+python cutepiesmtpdaemon.py
 ```
 
 ## Dependencies
 
-PieSmtpDaemon runs under Python 3.x. A version for _Python 2_ is available in another [branch](https://github.com/elFua/cutepiesmtp/tree/master-pyqt4-py2).
+PieSmtpDaemon runs under Python 3.x. 
 
 The app requires the following python modules:
 
@@ -90,7 +84,7 @@ The app requires the following python modules:
 A script for building a Debian/Ubuntu compatible DEB package is provided in the repo. To build and install a deb package run the following command from the cloned project folder:
 
 ```bash
-    ./debian-build/build_deb.sh
+./debian-build/build_deb.sh
 ```
 
 The DEB file will be created in the `debian-build` folder. The script will attempt to install the created DEB file using `dpkg -i packagename.deb`, and will prompt for the root password before performing the installation.
