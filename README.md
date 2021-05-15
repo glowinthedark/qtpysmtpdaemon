@@ -17,7 +17,7 @@ The default SMTP port `25` requires running the server with root priveleges. To 
 ## Download
 
 ###### Mac, Windows downloads
-Files are available under ([Releases](https://github.com/glowinthedark/qtpysmtpdaemon/releases)).
+Downloadable files are available under [Releases](https://github.com/glowinthedark/qtpysmtpdaemon/releases).
 <!--
 ###### Mac OSX
 ([Mac OSX DMG](https://github.com/elFua/cutepiesmtp/releases/download/0.173.2221/cutePieSMTP-0.173.dmg) (15.6MB)
