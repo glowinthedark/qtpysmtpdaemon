@@ -108,3 +108,5 @@ The DEB file will be created in the `debian-build` folder. The script will attem
 - open selected email with system default mail application
 - print selected email message
 
+
+
