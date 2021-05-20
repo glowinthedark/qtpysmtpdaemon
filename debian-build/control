@@ -1,7 +1,7 @@
 Package: cutepiesmtpdaemon
 Version: 0.160222
 Section: development, network
-Maintainer: xhuman <booleanbaby@gmail.com>
+Maintainer: xhuman <slavery dot two dot point dot zero at gmail dot com>
 Architecture: all
 Depends: python, python-qt4
 Description: Debugging SMTP server and Unix mailbox viewer
